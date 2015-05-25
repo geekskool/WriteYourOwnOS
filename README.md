@@ -1,5 +1,5 @@
 # OS_from_Scratch
-The main objective of the project is to implement a bootable OS with the help of  ["How to Write an Operating System from Scratch?"] by Nick Blundell.
+The main objective of the project is to implement a bootable OS with the help of  ["How to Write an Operating System from Scratch?"][1] by Nick Blundell.
 
 The code(mostly in assembly language) is as follows :
   - print_string.asm : printing a string in real mode
@@ -8,4 +8,4 @@ The code(mostly in assembly language) is as follows :
   - boot_sect.asm : demonstrates the switch from real mode to protected mode using above helper functions.
 
 
-["How to Write an Operating System from Scratch?"] : http://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf
+[1] : http://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf
