@@ -6,7 +6,8 @@ Please run the following from command line to get a demo of what it does :
 
 ```sh
 $ nasm boot_sect.asm -f bin -o boot_sect.bin
-$ qemu boot_sect.bin
+$ sudo-apt get install qemu
+$ qemu-system-x86_64 boot_sect.bin
 ```
 
 (Optional) If you wish to see the binary contents of the boot_sector:
