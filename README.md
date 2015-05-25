@@ -6,3 +6,6 @@ The code(mostly in assembly language) is as follows :
   - print_string_pm.asm : printing a string in protected mode
   - disk_load.asm : reading the first N sectors following the boot sector from a given disk 
   - boot_sect.asm : demonstrates the switch from real mode to protected mode using above helper functions.
+
+
+["How to Write an Operating System from Scratch?"] : http://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf
