@@ -5,7 +5,8 @@ The main objective of the project is to implement a bootable OS with the help of
 Please run the following from command line to get a demo of what it does :
 
 ```sh
-$ nasm boot sect.asm -f bin -o boot sect.bin
+$ nasm boot_sect.asm -f bin -o boot_sect.bin
+$ qemu boot_sect.bin
 ```
 
 The code(mostly in assembly language) is as follows :
