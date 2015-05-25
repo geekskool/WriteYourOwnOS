@@ -9,9 +9,9 @@ $ nasm boot_sect.asm -f bin -o boot_sect.bin
 $ qemu boot_sect.bin
 ```
 
-(Optional) If you wish to see the binary contents of the boot-sector:
+(Optional) If you wish to see the binary contents of the boot_sector:
 ```sh
-$ od -t x1 -A n boot sect.bin
+$ od -t x1 -A n boot_sect.bin
 ```
 
 
