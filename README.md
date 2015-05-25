@@ -6,5 +6,8 @@ The code(mostly in assembly language) is as follows :
   - print_string.asm : printing a string in real mode
   - print_string_pm.asm : printing a string in protected mode
   - disk_load.asm : reading the first N sectors following the boot sector from a given disk 
-  - boot_sect.asm : the entry point to seize control of the Computer. The boot sector is implemented in protected mode. Note the last two bytes of the 512-byte sector have been set to the magic number 0xaa55.
+  - boot_sect.asm : the entry point to seize control of the Computer.
+
+
+The boot sector is implemented in protected mode. Note the last two bytes of the 512-byte sector have been set to the magic number 0xaa55.
 
