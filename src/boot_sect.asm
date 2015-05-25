@@ -30,6 +30,7 @@ load_kernel:
 	mov bx, KERNEL_OFFSET
 	mov dh, 30
 	mov dl, [BOOT_DRIVE]
+        ; with dx having been loaded with number of sectors to read, we will call disk_load
 	call disk_load
 	ret
 
@@ -54,7 +55,7 @@ MSG_PROT_MODE:
 MSG_LOAD_KERNEL:
 	db " Loading kernel into memory. ", 0
 
-times 510-($-$$) db 0 ;  Pad the boot sector out with zeros
+times 510-($-$$) db 0 ; Pad the boot sector out with zeros
                       ; When compiled , our program must fit into 512 bytes ,
                       ; with the last two bytes being the magic number ,
                       ; so here , tell our assembly compiler to pad out our
