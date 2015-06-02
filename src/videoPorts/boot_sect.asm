@@ -8,7 +8,7 @@ mov [BOOT_DRIVE], dl	; BIOS stores our boot drive in DL , so it 's
 mov bp, 0x9000
 mov sp, bp
 
-mov bx, MSG_REAL_MODE ;to print a message on screen, store message in BX Register
+mov bx, MSG_REAL_MODE
 call print_string
 
 call load_kernel

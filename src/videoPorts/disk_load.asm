@@ -1,12 +1,10 @@
 disk_load:
 	push dx         ; Store DX on stack so later we can recall
                         ; how many sectors were request to be read!
-        ;SECTOR	
-	mov ah, 0x02	; BIOS read sector function 0x02 = READ
-	mov al, dh	; READ number sectors ; number specified by dh
-        ;CYLINDER
+	
+	mov ah, 0x02	; BIOS read sector function
+	mov al, dh	; READ dh sectors
 	mov ch, 0x00	; select cylinder 0
-        ;HEAD
 	mov dh, 0x00	; select head 0
 	
 	mov cl, 0x02	; start reading from 2nd sector (after boot sector)
