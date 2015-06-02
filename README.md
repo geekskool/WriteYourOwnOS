@@ -2,6 +2,7 @@
 ---
 The main objective of the project is to implement a bootable OS with the help of  ["How to Write an Operating System from Scratch?"](http://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf) by Nick Blundell.
 
+The README is incomplete!!!!
 Please run the following from command line to get a demo of what it does :
 
 ```sh
@@ -16,7 +17,7 @@ $ od -t x1 -A n boot_sect.bin
 ```
 
 
-The code(mostly in assembly language) is as follows :
+The boot_sector code(mostly in assembly language) is as follows :
   - boot_sect.asm : 
       * The entry point to seize control of the Computer
       * The boot sector is implemented in protected mode. 
